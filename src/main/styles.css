@@ -1,0 +1,75 @@
+.container {
+  font-family: Arial;
+  padding: 10px;
+  display: grid;
+  grid-template-areas: "header" "input" "results";
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+}
+
+.header-container {
+  grid-area: header;
+  padding-bottom: 10px;
+  line-height: 150%;
+}
+
+.title{
+    font-size: 25px;
+    color: #448eca;
+}
+
+.input-container {  
+  grid-area: input;
+  display: flex;
+  align-items: center;
+}
+
+.instructions{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #535353;
+}
+
+.input-container .input {
+  display: flex;
+  font-size: 14px;
+  width: 100px;
+  border: 1px solid #aaaaaa;
+  padding: 5px;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.input-container .input > input {
+  width: 90px;
+  border: none;
+  outline: none;
+}
+
+.input-container.invalid .input {
+  border: 1px solid #be0000;
+}
+
+.invalid-label {
+  color: #be0000;
+}
+
+.results-container {
+  grid-area: results;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 10px;
+}
+
+.swatch-label {
+  padding: 5px 0px;
+}
+
+.swatch-container {
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 2px 5px;
+}

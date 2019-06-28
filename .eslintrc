@@ -1,0 +1,17 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "semi": ["warn", "always"],
+        "babel/semi": 1,
+    },
+    "env": {
+        "es6": true
+    },
+    "plugins": ["babel"]
+}
