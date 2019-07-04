@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import styles from "./styles.css";
 import {
-  isValidColorCode,
+  isValidHexColorCode,
   lightenDarkenColor,
   contrastingColor
-} from "../ColorTools";
+} from "html-color-tools";
 
 const LIGHTER = "Lighter";
 const DARKER = "Darker";
@@ -12,7 +12,7 @@ const BRIGHTNESS_THRESHOLD = 186;
 
 const Main = props => {
   const [inputColor, setInputColor] = useState("");
-  const colorCodeIsValid = isValidColorCode(inputColor);
+  const colorCodeIsValid = isValidHexColorCode(inputColor);
   const badInput = inputColor.length >= 6 && !colorCodeIsValid;
   let lighter = [];
   let darker = [];
